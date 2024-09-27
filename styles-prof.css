@@ -1,0 +1,273 @@
+
+body {
+    height: 100vh;
+    background-color: rgb(34, 9, 44);
+    margin: 0;
+    width: 100%;
+    font-size: 1rem;
+    overflow-x: hidden;
+}
+
+.glow-text {
+    color: #ffffff;
+    transition: text-shadow 0.3s ease, color 0.3s ease;
+}
+  
+.glow-text:hover {
+    color: #ffffff;
+    text-shadow: 0 0 2px #ffffff, 0 0 3px #ffffff, 0 0 10px #ffffff;
+}
+
+.nav {
+    width: 100%;
+    height: 75px;
+    backdrop-filter: blur(500px);
+    border-radius: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 50px;
+    padding-right: 75px;
+    padding-top: 25px;
+}
+
+.navbar h2 {
+    color: aliceblue;
+    font-family: 'Satoshi';
+    font-size: 1rem;
+    margin: 0;
+    font-weight: 300;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.container div {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.container div:nth-child(1) {
+    height: 90%;
+    width: 80%;
+    background-color: rgb(240, 89, 65);
+    left: -20%;
+    top: -10%;
+}
+
+.container div:nth-child(2) {
+    height: 80%;
+    width: 70%;
+    background-color: rgb(140, 48, 97);
+    top: -12%;
+    right: -12%;
+}
+
+.container div:nth-child(3) {
+    height: 65%;
+    width: 80%;
+    background-color: rgb(190, 49, 68);
+    bottom: -15%;
+    right: -20%;
+}
+
+.container div:nth-child(4) {
+    height: 50%;
+    width: 75%;
+    background-color: rgb(135, 35, 65);
+    bottom: -10%;
+    left: -18%;
+}
+
+.container:after {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    content: "";
+    backdrop-filter: blur(100px);
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+
+.profile-content {
+    display: flex;
+    height: 80vh;
+    width: 80vw;
+    background-color: rgba(34, 9, 44, 0.3);
+    backdrop-filter: blur(300px);
+    border-radius: 25px;
+    position: relative;
+    z-index: 10;
+}
+
+.profile-img {
+    width: 27vw;
+    height: 65vh;
+    border-radius: 20px;
+    margin: 75px;
+}
+
+.text-content h1 {
+    font-family: 'Satoshi';
+    font-size: 5rem;
+    color: white;
+    margin-top: 75px;
+    text-align: center;
+    margin-right: 75px;
+    background-color: rgba(34, 9, 44, 0.3);
+    border-radius: 20px;
+    max-width: 100%;
+}
+
+.text-content p {
+    font-family: 'Satoshi';
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: white;
+    margin-right: 75px;
+}
+
+.text-content h2 {
+    font-family: 'Satoshi';
+    font-size: 2rem;
+    color: white;
+    margin-top: 12vh;
+    margin-right: 75px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.contacts {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 50px 75px 0 0;
+}
+
+.logos {
+    width: 50px;
+    height: 50px;
+}
+
+.logos img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+    transition: transform 0.3s ease;
+}
+.logos img:hover{
+    transform: scale(1.1);
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 1652px) {
+    .text-content h1 {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 1549px) {
+    .text-content h1 {
+        font-size: 3.5rem;
+        width: 90%;
+    }
+}
+
+@media (max-width: 1400px) {
+    .text-content h1 {
+        font-size: 3.5rem;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 1239px) {
+    .text-content h1 {
+        font-size: 3rem;
+    }
+    .text-content p {
+        font-size: 1.3rem;
+    }
+    .text-content h2 {
+        font-size: 1.7rem;
+        margin-top: 75px;
+    }
+}
+
+@media (max-width: 1095px) {
+    .text-content h1 {
+        font-size: 2.5rem;
+    }
+    .text-content p {
+        font-size: 1.1rem;
+    }
+    .text-content h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 964px) {
+    .text-content h1 {
+        font-size: 2.5rem;
+        width: 80%;
+        margin: 75px;
+    }
+    .text-content p {
+        font-size: 1.1rem;
+        margin: 75px;
+    }
+    .text-content h2 {
+        font-size: 2rem;
+        margin: 75px;
+    }
+    .profile-img {
+        display: none;
+    }
+    .contacts {
+        margin: 75px;
+    }
+}
+
+@media (max-width: 735px) {
+    .text-content h1 {
+        font-size: 2rem;
+        width: 73%;
+    }
+}
+
+@media (max-width: 550px) {
+    .navbar h2 {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 481px) {
+    .text-content h1 {
+        font-size: 1.5rem;
+        width: 50%;
+    }
+    .text-content h2 {
+        font-size: 1rem;
+    }
+}

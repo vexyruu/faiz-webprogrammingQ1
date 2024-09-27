@@ -1,0 +1,167 @@
+@font-face {
+    font-family: 'Satoshi';
+    src: url('fonts/Satoshi-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Satoshi-light';
+    src: url('fonts/Satoshi-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+.circles div:nth-child(1) {
+    height: 70%;
+    width: 50%;
+    background-color: rgb(240, 89, 65);
+    filter: blur(300px);
+    border-radius: 50%;
+    margin: -200px 0 0 -200px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.circles div:nth-child(2) {
+    height: 50%;
+    width: 50%;
+    background-color: rgb(190, 49, 68);
+    border-radius: 50%;
+    filter: blur(300px);
+    margin-left: 25%;
+    margin-top: 5%;
+    position: absolute;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(34, 9, 44);
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.container-main {
+    position: relative;
+    z-index: 1;
+}
+
+.header1 {
+    color: aliceblue;
+    font-family: 'Satoshi';
+    font-size: 5rem;
+    margin: 0;
+}
+
+.header2 {
+    color: aliceblue;
+    font-family: 'Satoshi';
+    font-size: 3rem;
+    margin: 0;
+    font-weight: 300;
+}
+
+.getstart {
+    position: relative;
+    display: inline-block;
+    background: white;
+    border: 0;
+    font-size: 1.5rem;
+    margin-top: 30px;
+    padding: 10px 50px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.getstart:hover{
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+    transform: scale(1.1);
+}
+
+
+.start-logo {
+    width: 18px;
+    height: 18px;
+    margin-right: 15px;
+}
+
+.glow-text {
+    color: #ffffff;
+    transition: text-shadow 0.3s ease, color 0.3s ease;
+}
+  
+.glow-text:hover {
+    color: #ffffff;
+    text-shadow: 0 0 2px #ffffff, 0 0 3px #ffffff, 0 0 10px #ffffff;
+}
+
+@media (max-width: 1200px) {
+    .header1 {
+        font-size: 4rem;
+    }
+    
+    .header2 {
+        font-size: 2.5rem;
+    }
+
+    .getstart {
+        font-size: 1.3rem;
+        padding: 10px 40px;
+    }
+
+    .start-logo {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+@media (max-width: 992px) {
+    .header1 {
+        font-size: 3rem;
+    }
+
+    .header2 {
+        font-size: 2rem;
+    }
+
+    .getstart {
+        font-size: 1.2rem;
+        padding: 8px 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header1 {
+        font-size: 2.5rem;
+    }
+
+    .header2 {
+        font-size: 1.8rem;
+    }
+
+    .getstart {
+        font-size: 1.1rem;
+        padding: 8px 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .header1 {
+        font-size: 2rem;
+    }
+
+    .header2 {
+        font-size: 1.5rem;
+    }
+
+    .getstart {
+        font-size: 1rem;
+        padding: 6px 15px;
+    }
+}

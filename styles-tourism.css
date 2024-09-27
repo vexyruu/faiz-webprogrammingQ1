@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;600&display=swap');
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('fonts/Satoshi-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Satoshi-light';
+    src: url('fonts/Satoshi-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+body {
+    background-image: url(images/tourist-back.jpg);
+    background-size: cover;
+    background-position: 75% 5%;
+    margin: 0;
+    overflow: hidden;
+    font-size: 1rem;
+}
+
+.nav a{
+    color: white;
+    text-decoration: none;
+    outline: none;
+}
+
+.nav a:visited{
+    color: white;
+    text-decoration: none;
+    outline: none;
+}
+
+
+.nav{
+    width: 100%;
+    height: 75px;
+    background-color: rgba(165, 164, 164, 0.3);
+    backdrop-filter: blur(50px);
+    margin: 0;
+    border-radius: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 50px;
+    padding-right: 75px;
+    padding-top: 25px;
+}
+
+.navbar h2 {
+    color: aliceblue;
+    font-family: 'Satoshi';
+    font-size: 1rem;
+    margin: 0;
+    font-weight: 300;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+
+.profile-content {
+    display: flex;
+    height: 80vh;
+    width: 80vw;
+    background-color: rgba(165, 164, 164, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    position: absolute;
+    z-index: 10;
+}
+
+.profile-content img {
+    max-width: 27vw;
+    max-height: 65vh;
+    border-radius: 20px;
+    margin: 75px 75px 25px 75px;
+}
+
+.text-content h1 {
+    font-family: 'Satoshi';
+    font-size: 5rem;
+    color: white;
+    margin-top: 75px;
+    text-align: center;
+    margin-right: 75px;
+    background-color: rgba(31, 31, 31, 0.3);
+    border-radius: 20px;
+}
+
+.text-content p {
+    font-family: 'Satoshi';
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: white;
+    margin-right: 75px;
+}
+
+
+.contacts {
+    display: flex;
+    justify-content: center;
+    margin: 0 75px 0 0;
+}
+
+.contacts img {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    border-radius: 0px;
+    overflow: hidden;
+}
+
+.tourist-image{
+    object-fit: cover;
+}
+
+.glow-text {
+    color: #ffffff;
+    transition: text-shadow 0.3s ease, color 0.3s ease;
+}
+  
+.glow-text:hover {
+    color: #ffffff;
+    text-shadow: 0 0 2px #ffffff, 0 0 3px #ffffff, 0 0 10px #ffffff;
+}
+
+
+@media (max-width: 1652px) {
+    .text-content h1 {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 1549px) {
+    .text-content h1 {
+        font-size: 3.5rem;
+        width: 90%;
+    }
+    .contacts img{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .text-content h1 {
+        font-size: 3.5rem;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 1200px) {
+    .text-content h1 {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 1239px) {
+    .text-content h1 {
+        font-size: 3rem;
+
+    }
+    .text-content p{
+        font-size: 1.3rem;
+    }
+    .text-content h2{
+        font-size: 1.7rem;
+        margin-top: 75px;
+    }
+}
+
+@media (max-width: 1095px) {
+    .text-content h1 {
+        font-size: 2.5rem;
+
+    }
+    .text-content p{
+        font-size: 1.1rem;
+    }
+    .text-content h2{
+        font-size: 1.5rem;
+        margin-top: 75px;
+    }
+}
+
+@media (max-width: 964px) {
+    .text-content h1 {
+        font-size: 2.5rem;
+        width: 80%;
+        margin: 75px;
+
+    }
+    .text-content p{
+        font-size: 1.1rem;
+        margin: 75px;
+    }
+    .text-content h2{
+        font-size: 2rem;
+        margin-top: 75px;
+        margin: 75px;
+    }
+    .tourist-image {
+        width: 27vw;
+        height: 65vh;
+        border-radius: 20px;
+        margin: 75px;
+        display: none;
+        margin: 75px;
+    }
+    .contacts{
+        display: flex;
+        justify-content: center;
+        margin: 75px;
+    }
+
+    
+}
+
+@media (max-width: 735px) {
+    .text-content h1 {
+        font-size: 2rem;
+        width: 73%;
+    }
+    
+}
+
+@media (max-width: 550px) {
+    .navbar h2{
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .text-content h1 {
+        font-size: 2rem;
+        width: 65%;
+    }
+}
+
+@media (max-width: 481px) {
+    .text-content h1 {
+        font-size: 1.5rem;
+        width: 50%;
+    }
+    .text-content h2{
+        font-size: 1rem;
+    }
+} 
